@@ -43,7 +43,8 @@ public class DisplayView extends Canvas implements Observer
     rootWindow.setSize( W, H );                     // Size of Window  
     rootWindow.setLocation( x, y );                 // Position on screen
     rootWindow.add( this, BorderLayout.CENTER );    //  Add to rootwindow
-    
+    cp.setBackground(Color.blue);
+
     rootWindow.setVisible( true );                  // Make visible
   }
   

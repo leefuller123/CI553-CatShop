@@ -4,6 +4,7 @@ import catalogue.Basket;
 import catalogue.Product;
 import debug.DEBUG;
 import middle.*;
+import catalogue.BetterBasket;
 
 import java.util.Observable;
 
@@ -194,7 +195,7 @@ public class CashierModel extends Observable
    */
   protected Basket makeBasket()
   {
-    return new Basket();
+    return new BetterBasket();
   }
 }
   

@@ -5,7 +5,7 @@ import middle.Names;
 import middle.RemoteMiddleFactory;
 
 import javax.swing.*;
-
+import java.awt.*;
 /**
  * The standalone shop Display Client.
  * @author  Mike Smith University of Brighton
@@ -32,9 +32,12 @@ public class DisplayClient
   {     
     JFrame  window = new JFrame();
 
-    window.setTitle( "Pick Client MVC");
+
+      window.setTitle( "Pick Client MVC");
     window.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
-    
+
+      window.getContentPane().setBackground(Color.BLUE);
+
     DisplayModel    model = new  DisplayModel(mf);
     DisplayView     view  = new  DisplayView( window, mf, 0, 0 );
     DisplayController cont  = new DisplayController( model, view );

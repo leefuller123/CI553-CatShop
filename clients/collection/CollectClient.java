@@ -5,6 +5,7 @@ import middle.Names;
 import middle.RemoteMiddleFactory;
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * The standalone Collection Client.
@@ -36,7 +37,9 @@ public class CollectClient
 		     
     window.setTitle( "Collection Client (MVC RMI)");
     window.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
-		    
+
+
+
 	CollectModel      model = new CollectModel(mf);
 	CollectView       view  = new CollectView( window, mf, 0, 0 );
 	CollectController cont  = new CollectController( model, view );

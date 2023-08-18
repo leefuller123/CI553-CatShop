@@ -8,6 +8,7 @@ import middle.Names;
 import middle.RemoteMiddleFactory;
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * The standalone Customer Client
@@ -32,7 +33,9 @@ public class CustomerClient
     JFrame  window = new JFrame();     
     window.setTitle( "Customer Client (MVC RMI)" );
     window.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
-    
+
+    window.getContentPane().setBackground(Color.BLUE);
+
     CustomerModel model = new CustomerModel(mf);
     CustomerView  view  = new CustomerView( window, mf, 0, 0 );
     CustomerController cont  = new CustomerController( model, view );
